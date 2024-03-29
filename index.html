@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colour - picker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="display-color">
+    <div class="color-box">
+      <input type="color" name="" id="color-pic" onchange="updateColor()" />
+    </div>
+    <script>
+      let color = document.getElementById("color-pic");
+      function updateColor() {
+        document.getElementById("display-color").style.backgroundColor =
+          color.value;
+      }
+    </script>
+  </body>
+</html>
